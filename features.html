@@ -50,25 +50,24 @@
             </div>
         </nav>
     </header>
-    
-    <section class="features-page py-5">
+    <section class="features-page">
         <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center text-md-start">
-                    <h1 class="mb-3 text-h1">Explore all our features</h1>
-                    <div class="text-big text-secondary">
+            <div class="row">
+                <div class="col-12 text-center text-md-start mb-4">
+                    <h1 class="fw-bold fs-1">Explore all our features</h1>
+                    <p class="text-big">
                         Check out the features listed below to learn more about the advantages of using our platform.
-                    </div>
+                    </p>
                 </div>
             </div>
 
-            <div class="row mb-5">
-                <div class="col-12">
+            <div class="row">
+                <div class="col-12 mb-4">
                     <form class="content__search_form" id="features_search">
                         <div class="form-group">
                             <div class="form__search">
-                                <div class="input-group ">
-                                    <input placeholder="Search..." name="search" type="text" id="inputText" class="form-control" />
+                                <div class="input-group">
+                                    <input placeholder="Search features..." name="search" type="text" id="inputText" class="form-control w-100" />
                                     <label for="inputText" class="search-label">
                                         <i class="fas fa-magnifying-glass"></i>
                                     </label>
@@ -78,143 +77,367 @@
                     </form>
                 </div>
             </div>
-
+<!-- Mobile dropdown navigation -->
+<div class="d-block d-lg-none mb-4">
+    <button class="btn btn-outline-secondary w-100 text-start mobile-nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav" aria-expanded="false" aria-controls="mobileNav">
+        <span>Browse Categories</span>
+        <i class="fas fa-chevron-down float-end mt-1"></i>
+    </button>
+    <div class="collapse" id="mobileNav">
+        <div class="card card-body p-0 border-top-0 rounded-top-0">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link ps-3" href="#user_panel">User panel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ps-3" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ps-3" href="#accept_payments">Accept payments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ps-3" href="#order_processing">Order processing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ps-3" href="#user_management">User management</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ps-3" href="#visual_theme_editor">Visual Theme Editor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ps-3" href="#seo">SEO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ps-3" href="#reports">Reports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ps-3" href="#admin_options">Admin options</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ps-3" href="#modules">Modules</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ps-3" href="#hosting">Hosting</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ps-3" href="#integrations">Integrations</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
             <div class="row">
                 <!-- Main content -->
-                <div class="col-lg-9 order-lg-2 mb-5 mb-lg-0">
+                <div class="col-lg-9 order-lg-2 features-content">
                     <div data-bs-spy="scroll" data-bs-target="#features-list-scroll" data-bs-smooth-scroll="true" tabindex="0">
                         <!-- User Panel Section -->
                         <section id="user_panel" class="mb-5">
-                            <h2 class="mb-4">User panel</h2>
-                            <div class="grid">
-                                <div class="features-page__list-item border p-4">
-                                    <h3 class="h5 mb-2">Mass orders</h3>
-                                    <p class="text-secondary mb-0">Lets set up mass orders for bulk delivery to save time.</p>
+                            <h2 class="section-header">User panel</h2>
+                            <div class="features-grid">
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Mass orders</h3>
+                                    <p class="feature-description">Lets set up mass orders for bulk delivery to save time.</p>
                                 </div>
-                                <div class="features-page__list-item border p-4">
-                                    <h3 class="h5 mb-2">User API</h3>
-                                    <p class="text-secondary mb-0">Methods that allow your resellers to work with your panel via API.</p>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">User API</h3>
+                                    <p class="feature-description">Methods that allow your resellers to work with your panel via API.</p>
                                 </div>
-                                <div class="features-page__list-item border p-4">
-                                    <h3 class="h5 mb-2">Multi-currency</h3>
-                                    <p class="text-secondary mb-0">Displaying service rates, user balance, new order charge to users based on the selected currency.</p>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Multi-currency</h3>
+                                    <p class="feature-description">Displaying service rates, user balance, new order charge to users based on the selected currency.</p>
                                 </div>
-                                <div class="features-page__list-item border p-4">
-                                    <h3 class="h5 mb-2">Multi-language</h3>
-                                    <p class="text-secondary mb-0">An optional multilingual interface that adapts to users' language preferences.</p>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Multi-language</h3>
+                                    <p class="feature-description">An optional multilingual interface that adapts to users' language preferences.</p>
                                 </div>
-                                <div class="features-page__list-item border p-4">
-                                    <h3 class="h5 mb-2">Language packs</h3>
-                                    <p class="text-secondary mb-0">Ready-made panel translations: Turkish, Portuguese (Brazil), Korean, Russian, Arabic, etc.</p>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Language packs</h3>
+                                    <p class="feature-description">Ready-made panel translations: Turkish, Portuguese (Brazil), Korean, Russian, Arabic, etc.</p>
                                 </div>
-                                <div class="features-page__list-item border p-4">
-                                    <h3 class="h5 mb-2">RTL support</h3>
-                                    <p class="text-secondary mb-0">Right-to-left support for languages like Arabic, Hebrew, etc.</p>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">RTL support</h3>
+                                    <p class="feature-description">Right-to-left support for languages like Arabic, Hebrew, etc.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Order history</h3>
+                                    <p class="feature-description">Users can keep track of all their orders in one place.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Deposit history</h3>
+                                    <p class="feature-description">Shows users information on adding funds to their accounts.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Mobile-friendly</h3>
+                                    <p class="feature-description">Panels can be easily accessed and used on mobile devices.</p>
                                 </div>
                             </div>
                         </section>
 
                         <!-- Services Section -->
                         <section id="services" class="mb-5">
-                            <h2 class="mb-4">Services</h2>
-                            <div class="grid">
-                                <div class="features-page__list-item border p-4">
-                                    <h3 class="h5 mb-2">Various types</h3>
-                                    <p class="text-secondary mb-0">The platform helps panel admins sell a great variety of services.</p>
+                            <h2 class="section-header">Services</h2>
+                            <div class="features-grid">
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Various types</h3>
+                                    <p class="feature-description">The platform helps panel admins sell a great variety of services.</p>
                                 </div>
-                                <div class="features-page__list-item border p-4">
-                                    <h3 class="h5 mb-2">Service descriptions</h3>
-                                    <p class="text-secondary mb-0">Help users quickly get familiar with all services.</p>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Service descriptions</h3>
+                                    <p class="feature-description">Help users quickly get familiar with all services.</p>
                                 </div>
-                                <div class="features-page__list-item border p-4">
-                                    <h3 class="h5 mb-2">Service categories</h3>
-                                    <p class="text-secondary mb-0">Create categories to keep all services neatly organized.</p>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Service categories</h3>
+                                    <p class="feature-description">Create categories to keep all services neatly organized.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Subscriptions</h3>
+                                    <p class="feature-description">Auto orders for likes, views, etc. on new posts.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Likes spread</h3>
+                                    <p class="feature-description">Auto likes, comments, views, etc. on already existing posts.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Refill</h3>
+                                    <p class="feature-description">An order refill can be performed by a provider or manually, paid refills are also available.</p>
                                 </div>
                             </div>
                         </section>
 
-                        <!-- More sections would follow the same pattern -->
+                        <!-- Accept Payments Section -->
+                        <section id="accept_payments" class="mb-5">
+                            <h2 class="section-header">Accept payments</h2>
+                            <div class="features-grid">
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">150+ payment methods</h3>
+                                    <p class="feature-description">We have many already integrated payment methods and constantly add new ones.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Method instructions</h3>
+                                    <p class="feature-description">Add multilingual instructions for each payment method for your users.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Extra fee</h3>
+                                    <p class="feature-description">Set an additional fee for selected methods that a user will have to pay when adding funds.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Order Processing Section -->
+                        <section id="order_processing" class="mb-5">
+                            <h2 class="section-header">Order processing</h2>
+                            <div class="features-grid">
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Unlimited providers</h3>
+                                    <p class="feature-description">You can connect as many providers as you want, we don't charge extra for that.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Provider balance check*</h3>
+                                    <p class="feature-description">Check all your providers' balances in one place. *A provider's API must support the balance data transfer feature.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Auto & manual modes</h3>
+                                    <p class="feature-description">You can either connect any APIs for automated order processing or manage orders manually.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- User Management Section -->
+                        <section id="user_management" class="mb-5">
+                            <h2 class="section-header">User management</h2>
+                            <div class="features-grid">
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Create user accounts</h3>
+                                    <p class="feature-description">All registered users appear automatically but you can always create user accounts manually.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Custom rates</h3>
+                                    <p class="feature-description">Easily set up custom rates for each user.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Bulk custom rates reset</h3>
+                                    <p class="feature-description">Helps admins simultaneously reset custom rates for multiple users.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Visual Theme Editor Section -->
+                        <section id="visual_theme_editor" class="mb-5">
+                            <h2 class="section-header">Visual Theme Editor</h2>
+                            <div class="features-grid">
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Create pages</h3>
+                                    <p class="feature-description">Create public & internal pages, add necessary blocks and customize their components.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Page visibility</h3>
+                                    <p class="feature-description">Hide pages from users while you edit or customize them.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Block types</h3>
+                                    <p class="feature-description">A variety of block types (media, text, etc) that can be used depending on their purposes.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- SEO Section -->
+                        <section id="seo" class="mb-5">
+                            <h2 class="section-header">SEO</h2>
+                            <div class="features-grid">
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Metadata</h3>
+                                    <p class="feature-description">Create the title tag, description and keyword meta tags for your panel.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">URL</h3>
+                                    <p class="feature-description">Choose a reader-friendly URL to help customers remember it quicker.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Sitemap.xml</h3>
+                                    <p class="feature-description">The platform automatically generates sitemaps for each panel.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Reports Section -->
+                        <section id="reports" class="mb-5">
+                            <h2 class="section-header">Reports</h2>
+                            <div class="features-grid">
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Payment reports</h3>
+                                    <p class="feature-description">Check user payments made with each method available on your panel.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Order reports</h3>
+                                    <p class="feature-description">See the number of orders for all or certain services as well as total charge and total quantity values.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Ticket reports</h3>
+                                    <p class="feature-description">Check how effectively panel staff responds to tickets from your users.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Admin Options Section -->
+                        <section id="admin_options" class="mb-5">
+                            <h2 class="section-header">Admin options</h2>
+                            <div class="features-grid">
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Help center</h3>
+                                    <p class="feature-description">Detailed guides on the admin area's pages that help better understand how panels work.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Staff notifications</h3>
+                                    <p class="feature-description">Get notifications on received payments, new manual and failed orders, new messages to an email address.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Bell notifications</h3>
+                                    <p class="feature-description">Receive notifications on important updates on your panel in your admin area.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Modules Section -->
+                        <section id="modules" class="mb-5">
+                            <h2 class="section-header">Modules</h2>
+                            <div class="features-grid">
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Affiliate system</h3>
+                                    <p class="feature-description">A partner program to grow your customer base.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Child panel selling</h3>
+                                    <p class="feature-description">Cheap panels for your customers that can have only your panel as a service provider.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Free balance</h3>
+                                    <p class="feature-description">Set up a one-time free balance amount for new panel users after signing up.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Hosting Section -->
+                        <section id="hosting" class="mb-5">
+                            <h2 class="section-header">Hosting</h2>
+                            <div class="features-grid">
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Content delivery network</h3>
+                                    <p class="feature-description">Reduces download times thanks to a network of proxy servers deployed at multiple locations.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Unlimited bandwidth</h3>
+                                    <p class="feature-description">You will never be charged based on the number of visitors or traffic to your panel.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">DDoS protection</h3>
+                                    <p class="feature-description">Enjoy a stable and reliable SMM panel performance that is resistant to DDoS attacks.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Integrations Section -->
+                        <section id="integrations" class="mb-5">
+                            <h2 class="section-header">Integrations</h2>
+                            <div class="features-grid">
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Google Analytics</h3>
+                                    <p class="feature-description">Statistics & basic analytical tools for search engine optimization (SEO) and marketing purposes.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Google Tag Manager</h3>
+                                    <p class="feature-description">Manage all your website tags without editing code using simple tag management solutions.</p>
+                                </div>
+                                <div class="features-page__list-item">
+                                    <h3 class="feature-title">Getsitecontrol</h3>
+                                    <p class="feature-description">Build eye-catching popups to increase your panel conversion rates.</p>
+                                </div>
+                            </div>
+                        </section>
                     </div>
+
                 </div>
 
                 <!-- Sidebar navigation -->
                 <div class="col-lg-3 order-lg-1">
-                    <div class="sticky-top d-none d-lg-block pt-3">
+                    <div class="features-nav d-none d-lg-block">
                         <ul class="nav flex-column" id="features-list-scroll">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#user_panel">User panel</a>
+                                <a class="nav-link nav-feature active" href="#user_panel">User panel</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#services">Services</a>
+                                <a class="nav-link nav-feature" href="#services">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#accept_payments">Accept payments</a>
+                                <a class="nav-link nav-feature" href="#accept_payments">Accept payments</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#order_processing">Order processing</a>
+                                <a class="nav-link nav-feature" href="#order_processing">Order processing</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#user_management">User management</a>
+                                <a class="nav-link nav-feature" href="#user_management">User management</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#visual_theme_editor">Visual Theme Editor</a>
+                                <a class="nav-link nav-feature" href="#visual_theme_editor">Visual Theme Editor</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#seo">SEO</a>
+                                <a class="nav-link nav-feature" href="#seo">SEO</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#reports">Reports</a>
+                                <a class="nav-link nav-feature" href="#reports">Reports</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#admin_options">Admin options</a>
+                                <a class="nav-link nav-feature" href="#admin_options">Admin options</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#modules">Modules</a>
+                                <a class="nav-link nav-feature" href="#modules">Modules</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#hosting">Hosting</a>
+                                <a class="nav-link nav-feature" href="#hosting">Hosting</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#integrations">Integrations</a>
+                                <a class="nav-link nav-feature" href="#integrations">Integrations</a>
                             </li>
                         </ul>
-                    </div>
-
-                    <!-- Mobile dropdown navigation -->
-                    <div class="d-block d-lg-none mb-4">
-                        <button class="btn btn-secondary w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav" aria-expanded="false" aria-controls="mobileNav">
-                            <span>Categories</span>
-                            <i class="fas fa-chevron-down float-end mt-1"></i>
-                        </button>
-                        <div class="collapse" id="mobileNav">
-                            <div class="card card-body p-0">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link ps-3" href="#user_panel">User panel</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link ps-3" href="#services">Services</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link ps-3" href="#accept_payments">Accept payments</a>
-                                    </li>
-                                    <!-- More items would follow the same pattern -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- No results section -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="no-result text-center py-5 my-5">
-                        <i class="fas fa-search mb-4 fs-1 text-light"></i>
-                        <div class="mb-2 text-secondary">Didn't find the feature you need?</div>
-                        <div class="text-secondary">
-                            <a href="#" target="_blank">Request a feature</a>, and we'll see if it's possible to add it.
-                        </div>
                     </div>
                 </div>
             </div>

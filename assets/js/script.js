@@ -28,3 +28,31 @@ function updatePricing() {
 
 range.addEventListener('input', updatePricing);
 mobileAppToggle.addEventListener('change', updatePricing);
+document.addEventListener('DOMContentLoaded', function() {
+  var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      target: '#features-list-scroll'
+  });
+  
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+              window.scrollTo({
+                  top: targetElement.offsetTop -20,
+                  behavior: 'smooth'
+              });
+              
+              // Update active nav link
+              document.querySelectorAll('.nav-link').forEach(link => {
+                  link.classList.remove('active');
+              });
+              this.classList.add('active');
+          }
+      });
+  });
+});
